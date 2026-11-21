@@ -49,7 +49,7 @@
   </defs>
 
   <!-- Hintergrund -->
-  <rect width="2560" height="1440" fill="#08182b"/>
+  <rect width="2560" height="1440" fill="#081426"/>
   <rect width="2560" height="1440" fill="url(#vignette)"/>
 
   <!-- Kopzeile -->
@@ -122,17 +122,20 @@
   <line x1="922" y1="607" x2="958" y2="607" stroke="#7f93aa" stroke-width="1.5" stroke-dasharray="4 4"/>
 
   <!-- Tags Haus -->
-  <text x="880" y="228" class="t-tag">VL HAUS</text>
+  <text x="880" y="228" class="t-tag">VL Haus</text>
   <rect x="965" y="206" width="100" height="30" class="field" rx="4"/>
-  <text x="880" y="1022" class="t-tag">RL HAUS</text>
+  <text x="880" y="1022" class="t-tag">RL Haus</text>
   <rect x="965" y="1000" width="100" height="30" class="field" rx="4"/>
 
   <!-- Mischer -->
   <circle cx="1240" cy="615" r="44" fill="url(#mixerGrad)" stroke="#04101f" stroke-width="3"/>
   <circle cx="1240" cy="615" r="31" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
   <text x="1240" y="627" text-anchor="middle" font-size="30" font-weight="700" fill="#ffffff">M</text>
-  <text x="1240" y="712" text-anchor="middle" class="t-hdr" letter-spacing="2">FBH-MISCHER</text>
+  <text x="1240" y="712" text-anchor="middle" class="t-hdr" letter-spacing="2">FBH Mischer</text>
 
+  <!-- Verteiler-Zonen -->
+  <rect x="1428" y="622" width="1084" height="338" class="pan" rx="16"/>
+  <rect x="1428" y="296" width="1084" height="308" class="pan" rx="16"/>
   <!-- FBH-Vorlauf zur Sammelschiene (nur ueber Mischer) -->
   <path class="pg vl" d="M1284 595 H1448" marker-end="url(#aVl)"/>
   <path class="pc vl" d="M1284 595 H1448" marker-end="url(#aVl)"/>
@@ -144,121 +147,123 @@
   <!-- Vorlauf-Sammelschiene -->
   <path class="pg vl" d="M1450 340 V940"/>
   <path class="pc vl" d="M1450 340 V940"/>
-  <text transform="rotate(-90 1471 640)" x="1471" y="644" text-anchor="middle" class="t-sm">VORLAUF-SAMMELSCHIENE</text>
+  <text transform="rotate(-90 1471 640)" x="1471" y="644" text-anchor="middle" class="t-sm">FBH VORLAUF-SAMMELSCHIENE</text>
 
   <!-- Ruecklauf-Sammelschiene -->
   <path class="pg rl" d="M2480 340 V1350"/>
   <path class="pc rl" d="M2480 340 V1350"/>
-  <text transform="rotate(-90 2460 845)" x="2460" y="849" text-anchor="middle" class="t-sm">R&#220;CKLAUF-SAMMELSCHIENE</text>
+  <text transform="rotate(-90 2460 845)" x="2460" y="849" text-anchor="middle" class="t-sm">FBH R&#220;CKLAUF-SAMMELSCHIENE</text>
 
   <!-- FBH-Infofelder -->
   <rect x="1060" y="1060" width="250" height="280" class="pan" rx="14"/>
   <text x="1185" y="1094" text-anchor="middle" class="t-hdr">FBH MISCHERKREIS</text>
   <line x1="1078" y1="1108" x2="1292" y2="1108" stroke="#12283f" stroke-width="1.5"/>
-  <text x="1080" y="1148" class="t-lbl">Vorlauf</text>
+  <text x="1080" y="1148" class="t-lbl">FBH Vorlauf</text>
   <rect x="1240" y="1128" width="86" height="28" class="field" rx="4"/>
-  <text x="1080" y="1198" class="t-lbl">R&#252;cklauf</text>
+  <text x="1080" y="1198" class="t-lbl">FBH R&#252;cklauf</text>
   <rect x="1240" y="1178" width="86" height="28" class="field" rx="4"/>
   <text x="1080" y="1248" class="t-lbl">Delta-T</text>
   <rect x="1240" y="1228" width="86" height="28" class="field" rx="4"/>
-  <text x="1080" y="1298" class="t-lbl" font-size="12">aktive Heizkreise</text>
+  <text x="1080" y="1298" class="t-lbl" font-size="12">Aktive Heizkreise</text>
   <rect x="1240" y="1278" width="86" height="28" class="field" rx="4"/>
 
-  <!-- ===== HKV OBERGESCHOSS (6 Kreise) ===== -->
-  <text x="1585" y="322" class="t-sm" letter-spacing="3">HKV OBERGESCHOSS</text>
+  <!-- ===== Verteiler OBERGESCHOSS (6 Kreise) ===== -->
+  <text x="1585" y="330" class="t-hdr">Obergeschoss (OG)</text>
+
   <g>
     <path class="pc vl" d="M1450 340 H1549"/>
     <path class="pc rl" d="M1580 340 V360 H2480"/>
     <circle cx="1560" cy="340" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="326" width="240" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="326" width="240" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="346" class="t-row">Schlafzimmer</text>
     <rect x="2330" y="324" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 386 H1549"/>
     <path class="pc rl" d="M1580 386 V406 H2480"/>
     <circle cx="1560" cy="386" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="372" width="260" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="372" width="260" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="392" class="t-row">Schlafzimmer Seite 2</text>
     <rect x="2330" y="370" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 432 H1549"/>
     <path class="pc rl" d="M1580 432 V452 H2480"/>
     <circle cx="1560" cy="432" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="418" width="180" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="418" width="180" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="438" class="t-row">Bad OG</text>
     <rect x="2330" y="416" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 478 H1549"/>
     <path class="pc rl" d="M1580 478 V498 H2480"/>
     <circle cx="1560" cy="478" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="464" width="180" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="464" width="180" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="484" class="t-row">WC OG</text>
     <rect x="2330" y="462" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 524 H1549"/>
     <path class="pc rl" d="M1580 524 V544 H2480"/>
     <circle cx="1560" cy="524" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="510" width="180" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="510" width="180" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="530" class="t-row">Stiege</text>
     <rect x="2330" y="508" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 570 H1549"/>
     <path class="pc rl" d="M1580 570 V590 H2480"/>
     <circle cx="1560" cy="570" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="556" width="180" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="556" width="180" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="576" class="t-row">Yoga</text>
     <rect x="2330" y="554" width="130" height="32" class="field" rx="4"/>
   </g>
 
-  <!-- ===== HKV ERDGESCHOSS (7 Kreise) ===== -->
-  <text x="1585" y="622" class="t-sm" letter-spacing="3">HKV ERDGESCHOSS</text>
+  <!-- ===== Verteiler ERDGESCHOSS (7 Kreise) ===== -->
+  <text x="1585" y="656" class="t-hdr">Erdgeschoss (EG)</text>
+
   <g>
     <path class="pc vl" d="M1450 640 H1549"/>
     <path class="pc rl" d="M1580 640 V660 H2480"/>
     <circle cx="1560" cy="640" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="626" width="200" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="626" width="200" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="646" class="t-row">Wohnzimmer</text>
     <rect x="2330" y="624" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 686 H1549"/>
     <path class="pc rl" d="M1580 686 V706 H2480"/>
     <circle cx="1560" cy="686" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="672" width="200" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="672" width="200" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="692" class="t-row">Esszimmer</text>
     <rect x="2330" y="670" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 732 H1549"/>
     <path class="pc rl" d="M1580 732 V752 H2480"/>
     <circle cx="1560" cy="732" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="718" width="180" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="718" width="180" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="738" class="t-row">K&#252;che</text>
     <rect x="2330" y="716" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 778 H1549"/>
     <path class="pc rl" d="M1580 778 V798 H2480"/>
     <circle cx="1560" cy="778" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="764" width="180" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="764" width="180" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="784" class="t-row">B&#252;ro</text>
     <rect x="2330" y="762" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 824 H1549"/>
     <path class="pc rl" d="M1580 824 V844 H2480"/>
     <circle cx="1560" cy="824" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="810" width="180" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="810" width="180" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="830" class="t-row">Gang</text>
     <rect x="2330" y="808" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 870 H1549"/>
     <path class="pc rl" d="M1580 870 V890 H2480"/>
     <circle cx="1560" cy="870" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="856" width="180" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="856" width="180" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="876" class="t-row">Bad EG</text>
     <rect x="2330" y="854" width="130" height="32" class="field" rx="4"/>
 
     <path class="pc vl" d="M1450 916 H1549"/>
     <path class="pc rl" d="M1580 916 V936 H2480"/>
     <circle cx="1560" cy="916" r="10" fill="#22c55e" stroke="#04101f" stroke-width="2.5"/>
-    <rect x="1580" y="902" width="180" height="28" fill="#08182b" fill-opacity="0.85"/>
+    <rect x="1580" y="902" width="180" height="28" fill="#081426" fill-opacity="0.85"/>
     <text x="1588" y="922" class="t-row">WC EG</text>
     <rect x="2330" y="900" width="130" height="32" class="field" rx="4"/>
   </g>
